@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: sans-serif;
+} 
+
+div.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header li.first {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header li {
+    list-style-type: none;
+    margin: 0 16px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+a:hover {
+    color: #9a9a9a;
+}
+
+a {
+    text-decoration: none;
+    color: #9a9a9a;
+}
+
+.main{
+    display: flex;
+    width: 75%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 5%;
+    background-color: #D3D3D3;
+}
+
+.content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding: 0 10px;
+    background-color: white;
+}
+
+.head {
+    display: flex;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #9a9a9a;
+    align-items: baseline;
+}
+
+.head p{
+    margin: 5px 4px;
+}
+
+.head p.date{
+    font-size: 16px;
+    color: #9a9a9a;
+}
+
+.head p.author{
+    font-size: 20px;
+    color: blue;
+}
+
+.post h1.title {
+    margin: 5px 0px;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 10px 0;
+    padding: 0 10px;
+    height: fit-content;
+    background-color: white;
+}
+
+.sidebar h1 {
+    margin: 5px;
+}
+
+.sidebar p {
+    margin: 5px;
+}
+
+.sidebar ul {
+    border-top: 2px solid #9a9a9a;
+}
+
+.sidebar li {
+    list-style-type: none;
+    font-size: 16px;
+    margin-left: -40px;
+    padding: 10px;
+    border-left: 2px solid #9a9a9a;
+    border-right: 2px solid #9a9a9a;;
+    border-bottom: 2px solid #9a9a9a;;
+    color: #9a9a9a;
+}

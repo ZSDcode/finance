@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="main container">
+    <div class="main">
+        <div class="content">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="head">
+                        <p class="author">{{ post.author }}</p>
+                        <p class="date">{{ post.date_posted }}</p>
+                    </div>
+                    <h1 class="title">{{ post.title }}</h1>
+                    <p class="content">{{ post.content }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="sidebar">
+            <h1>Our Sidebar</h1>
+            <p>You can put anything you like here</p>
+            <ul>
+                <li>Latest Post</li>
+                <li>Annoucements</li>
+                <li>Calendar</li>
+                <li>etc.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock content %}
